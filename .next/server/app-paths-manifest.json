@@ -1,0 +1,8 @@
+{
+  "/zrealizowane-kontrakty/page": "app/zrealizowane-kontrakty/page.js",
+  "/realizacje/page": "app/realizacje/page.js",
+  "/oferta/page": "app/oferta/page.js",
+  "/page": "app/page.js",
+  "/listy-referencyjne/page": "app/listy-referencyjne/page.js",
+  "/kontakt/page": "app/kontakt/page.js"
+}
