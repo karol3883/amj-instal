@@ -125,14 +125,12 @@ export default function Home() {
           <div className="container hero__inner">
             <div className="hero__copy">
               <p className="hero__eyebrow">AMJ-Instal Sp. z o.o.</p>
-              <h1>
-                Projektujemy, wykonujemy i serwisujemy instalacje sanitarne,
-                elektryczne oraz automatykę budynkową.
-              </h1>
+              <h1>Instalacje, które działają bez kompromisów.</h1>
               <p className="hero__lead">
-                Od 2013 roku realizujemy inwestycje dla firm i instytucji,
-                łącząc wiedzę techniczną z odpowiedzialnym prowadzeniem
-                kontraktów i terminową realizacją.
+                Projektujemy, wykonujemy i serwisujemy instalacje sanitarne,
+                elektryczne oraz automatykę budynkową. Od 2013 roku realizujemy
+                inwestycje dla firm i instytucji, łącząc wiedzę techniczną z
+                odpowiedzialnym prowadzeniem kontraktów i terminową realizacją.
               </p>
               <div className="hero__actions">
                 <a className="btn btn--primary" href="/oferta">
@@ -267,16 +265,29 @@ export default function Home() {
                 świadczyć usługi.
               </p>
             </div>
-            <div className="clients__grid">
-              {clients.map((client, index) => (
-                <div
-                  className="client"
-                  key={client.alt}
-                  style={{ "--card-delay": index * 0.04 }}
-                >
-                  <img src={client.src} alt={client.alt} loading="lazy" />
-                </div>
-              ))}
+            <div className="clients-marquee">
+              <div className="clients__grid clients__grid--marquee">
+                {clients.map((client, index) => (
+                  <div
+                    className="client"
+                    key={`${client.alt}-a`}
+                    style={{ "--card-delay": index * 0.04 }}
+                  >
+                    <img src={client.src} alt={client.alt} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+              <div className="clients__grid clients__grid--marquee" aria-hidden="true">
+                {clients.map((client, index) => (
+                  <div
+                    className="client"
+                    key={`${client.alt}-b`}
+                    style={{ "--card-delay": index * 0.04 }}
+                  >
+                    <img src={client.src} alt="" loading="lazy" />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

@@ -74,27 +74,46 @@ export default function RealizacjePage() {
               </p>
             </div>
             <div className="realization-gallery">
-              {realizationImages.map((item, index) => (
-                <figure
-                  key={item.src}
-                  className="realization-card"
-                  style={{ "--card-delay": index * 0.08 }}
-                >
-                  <img src={item.src} alt={item.alt} loading="lazy" />
-                  <figcaption>
-                    <div className="realization-meta">
-                      <span>{item.location}</span>
-                      <span>{item.scope.length} zakresy</span>
-                    </div>
-                    <h3>{item.title}</h3>
-                    <div className="realization-tags">
-                      {item.scope.map((tag) => (
-                        <span key={tag}>{tag}</span>
-                      ))}
-                    </div>
-                  </figcaption>
-                </figure>
-              ))}
+              {realizationImages.map((item, index) => {
+                const zoomId = `realization-zoom-${index}`;
+                return (
+                  <div
+                    key={item.src}
+                    className="realization-zoom"
+                    style={{ "--card-delay": index * 0.08 }}
+                  >
+                    <input
+                      id={zoomId}
+                      className="realization-toggle"
+                      type="checkbox"
+                    />
+                    <label htmlFor={zoomId} className="realization-card">
+                      <img src={item.src} alt={item.alt} loading="lazy" />
+                      <figcaption>
+                        <div className="realization-meta">
+                          <span>{item.location}</span>
+                        </div>
+                        <h3>{item.title}</h3>
+                        <div className="realization-tags">
+                          {item.scope.map((tag) => (
+                            <span key={tag}>{tag}</span>
+                          ))}
+                        </div>
+                      </figcaption>
+                      <span className="realization-hint">
+                        Kliknij, aby powiększyć
+                      </span>
+                    </label>
+                    <label
+                      htmlFor={zoomId}
+                      className="realization-lightbox"
+                      aria-label="Zamknij podgląd realizacji"
+                    >
+                      <img src={item.src} alt={item.alt} loading="lazy" />
+                    </label>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

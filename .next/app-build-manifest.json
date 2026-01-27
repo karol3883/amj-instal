@@ -16,6 +16,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/zrealizowane-kontrakty/page.js"
     ],
+    "/oferta/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/oferta/page.js"
+    ],
     "/kontakt/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -31,10 +36,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/listy-referencyjne/page.js"
     ],
-    "/oferta/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/oferta/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

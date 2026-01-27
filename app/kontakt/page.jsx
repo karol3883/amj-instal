@@ -110,6 +110,50 @@ export default function KontaktPage() {
           </div>
         </section>
 
+        <section className="section contact-extra">
+          <div className="container">
+            <div className="section__head">
+              <h2>Szybkie ścieżki kontaktu</h2>
+              <p>
+                Wybierz najkrótszą drogę do naszego zespołu. Odpowiemy możliwie
+                szybko i podpowiemy, jak dalej poprowadzić temat.
+              </p>
+            </div>
+            <div className="contact-channels">
+              <article className="contact-channel-card">
+                <div className="contact-channel-icon">
+                  <i className="fa-solid fa-phone-volume"></i>
+                </div>
+                <h3>Kontakt pilny</h3>
+                <p>Sprawy wymagające szybkiej reakcji i konsultacji.</p>
+                <a href="tel:+48224278270">Zadzwoń: 22 427 82 70</a>
+              </article>
+              <article className="contact-channel-card">
+                <div className="contact-channel-icon">
+                  <i className="fa-solid fa-file-signature"></i>
+                </div>
+                <h3>Zapytania ofertowe</h3>
+                <p>Prześlij zakres lub dokumentację do wstępnej analizy.</p>
+                <a href="mailto:biuro@amj-instal.pl">Napisz do nas</a>
+              </article>
+              <article className="contact-channel-card">
+                <div className="contact-channel-icon">
+                  <i className="fa-solid fa-route"></i>
+                </div>
+                <h3>Dojazd do biura</h3>
+                <p>Spotkania umawiamy po wcześniejszym kontakcie.</p>
+                <a
+                  href="https://maps.google.com/?q=Pastelowa%201a%2005-090%20Raszyn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Otwórz mapę
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section className="section">
           <div className="container">
             <div className="section__head">

@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export default function SiteFooter() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="footer">
@@ -28,15 +30,21 @@ export default function SiteFooter() {
         </div>
         <div className="footer__bottom">
           <div className="container footer__bottom-grid">
-            <p>© 2020 AMJ-Instal Sp. z o.o. | Wszelkie prawa zastrzeżone</p>
+            <p>
+              © {currentYear} AMJ-Instal Sp. z o.o. | Wszelkie prawa zastrzeżone
+            </p>
             <p>
               <Link href="/polityka-prywatnosci">Polityka Prywatności</Link> |{" "}
               <Link href="/polityka-cookies">Polityka Cookies</Link>
             </p>
             <p>
               Projekt i wykonanie{" "}
-              <a href="https://designsolutions.pl/" target="_blank" rel="noreferrer">
-                Design Solutions
+              <a
+                href="https://www.linkedin.com/in/karol-abramczyk-17ba92197"
+                target="_blank"
+                rel="noreferrer"
+              >
+                JustCode - Karol Abramczyk
               </a>
             </p>
           </div>
