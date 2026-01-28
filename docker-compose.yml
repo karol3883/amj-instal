@@ -1,5 +1,6 @@
 services:
   web:
+    image: karol3883/justcode:amj
     build:
       context: .
       dockerfile: docker/Dockerfile.prod
