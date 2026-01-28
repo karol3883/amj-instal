@@ -32,4 +32,4 @@ jobs:
           context: .
           file: docker/Dockerfile.prod
           tags: ${{ env.IMAGE_NAME }}
-          push: ${{ secrets.DOCKERHUB_USERNAME != '' && secrets.DOCKERHUB_TOKEN != '' }}
+          push: ${{ secrets.DOCKER_LOGIN != '' && secrets.DOCKER_PASSWORD != '' }}
