@@ -1,0 +1,1 @@
+curl https://api.mikr.us/exec   --data-urlencode "srv=monika373"   --data-urlencode "key=45febb092f9d617a92381c8383ba14f65d3ac68b"   --data-urlencode "cmd=cd /opt && docker compose pull && docker compose up -d"
