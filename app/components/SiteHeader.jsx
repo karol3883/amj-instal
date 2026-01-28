@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navItems = [
-  { label: "O nas - test", href: "/" },
+  { label: "O nas", href: "/" },
   { label: "Oferta", href: "/oferta" },
   { label: "Zrealizowane Kontrakty", href: "/zrealizowane-kontrakty" },
   { label: "Listy Referencyjne", href: "/listy-referencyjne" },
