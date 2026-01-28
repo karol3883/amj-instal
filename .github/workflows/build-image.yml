@@ -33,3 +33,6 @@ jobs:
           file: docker/Dockerfile.prod
           tags: ${{ env.IMAGE_NAME }}
           push: ${{ secrets.DOCKER_LOGIN != '' && secrets.DOCKER_PASSWORD != '' }}
+
+
+#asdad
